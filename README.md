@@ -60,5 +60,5 @@ mark your Location enter details of your Task and choose when you want to be not
 <br></br>
 
 <h2 align="left">Conclusion</h2>
-The App Not Only Let You To Set Tasks With Data & Time Bul You Can Also Create Tasks With Location Which Let The App Be More Powerful ! 🔥
+The App Not Only Let You To Set Tasks With Data & Time BuT You Can Also Create Tasks With Location Which Let The App Be More Powerful ! 🔥
 <br></br>
