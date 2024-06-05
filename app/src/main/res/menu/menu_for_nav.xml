@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@android:layout/list_content">
+    <item android:title="Go to">
+        <menu>
+            <item
+                android:id="@+id/FinishedTasks"
+                android:icon="@drawable/ic_correct"
+                android:title="Finished Tasks" />
+
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/LocationTasks"
+                android:icon="@drawable/ic_location_marker"
+                android:title="Location Tasks" />
+
+        </menu>
+    </item>
+    <item android:title="Communication">
+        <menu>
+            <item android:id="@+id/RemoveAds"
+                android:icon="@drawable/ic_block"
+                android:title="Remove Ads" />
+            <item
+                android:id="@+id/Share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_baseline_mail_24"
+                android:title="FeedBack" />
+
+            <item
+                android:id="@+id/Rate"
+                android:icon="@drawable/ic_baseline_star_24"
+                android:title="Rate App" />
+        </menu>
+    </item>
+    <item android:title="Follow us">
+        <menu>
+
+            <item
+                android:id="@+id/insta"
+                android:icon="@drawable/ic_instagram_sketched"
+                android:title="Instagram" />
+
+            <item
+            android:id="@+id/twitter"
+            android:icon="@drawable/ic_twitter"
+            android:title="Twitter" />
+
+        </menu>
+    </item>
+</menu>

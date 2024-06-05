@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_margin="12dp"
+        app:cardElevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:id="@+id/changeBackground"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/VisibleArea"
+                tools:visibility="visible"
+                android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/titleheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="17sp"
+                />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="6dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descriptionheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif"
+                android:id="@+id/Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                tools:text="Heloooooooooooooooooooooooooooooooooooooooooooooo"
+                android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/Repeat_layout"
+                    >
+                    <TextView
+                        android:id="@+id/Repeat_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repeat"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textSize="17sp"
+                        />
+                <TextView
+                    android:id="@+id/RepeatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#045B78"
+                    tools:text="Repeat every 2 week"
+                    android:fontFamily="sans-serif"
+                    android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/VisibleArea"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TimeHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    tools:text="Helloooooo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_Time"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/DateHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="@string/date"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxWidth="200dp"
+                    android:layout_marginStart="26dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    tools:text="Helloooooo" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/loading"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp" />
+
+            <ImageView
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/repeat"
+                android:layout_toStartOf="@id/loading"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@drawable/repeat_task"
+                android:contentDescription="@string/repeat_task" />
+
+            <ImageView
+                android:id="@+id/MoreDetailsArrow"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/more_details" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>

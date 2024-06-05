@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+
+        android:title="Notification" android:icon="@drawable/ic_notification" >
+
+        <CheckBoxPreference
+            android:title="Enable Vibration"
+            android:key="@string/vibration"
+            android:defaultValue="true"
+            android:summary="Enable Vibration for the Notification" />
+
+         <ListPreference
+             android:title="Remind Me After"
+             android:key="@string/RemindMe"
+             android:entries="@array/RemindMeEntries"
+             android:entryValues="@array/RemindMeValues"
+             android:defaultValue="@string/min5"
+             android:summary="When You click Remind Me You will Get a notification after 5 min" />
+
+          <Preference
+              android:title="Set Sound "
+              android:icon="@drawable/sound"
+              android:key="@string/SetSoundKey"
+              android:summary="Default Sound" />
+    </PreferenceCategory>
+
+    <ListPreference android:title="Order Tasks By" android:key="@string/OrderTasks"
+        android:summary="Default" android:defaultValue="@string/defaultOrder" android:entryValues="@array/OrderByValues" android:entries="@array/OrderByEntries" />
+
+    <PreferenceCategory android:title="Language"  android:icon="@drawable/ic_global" >
+
+        <ListPreference android:title="Microphone Language"
+            android:key="@string/STT_key"
+            android:entries="@array/Language_entries"
+            android:entryValues="@array/Language_value"
+            android:defaultValue="@string/US"
+            android:summary="Default (English-US)" />
+
+        <ListPreference
+            android:icon="@drawable/ic_translate"
+            android:key="@string/TTS_key"
+            android:title="The Language of playing Description"
+            android:entries="@array/Language_entries"
+            android:entryValues="@array/Language_value"
+            android:defaultValue="@string/US"
+            android:summary="Default (English-US)" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+        <Preference android:title="Remove ads"
+            android:icon="@drawable/ic_block"
+            android:summary="Remove ads from your app forever"
+            android:key="@string/RemoveAdKey" />
+        <Preference
+            android:title="Version" android:summary="1.2"
+            android:selectable="false" />
+        <Preference
+            android:key="@string/feedback"
+            android:title="Send Feedback"
+            android:summary="Send your feedback your opinion matters"
+            android:icon="@drawable/ic_baseline_mail_24" />
+        <Preference
+            android:key="@string/MoreApps"
+            android:title="More apps"
+            android:icon="@drawable/ic_app" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Follow us">
+        <Preference android:title="Facebook" android:icon="@drawable/ic_facebook"
+            android:key="@string/facebook"
+            />
+        <Preference android:title="Twitter" android:icon="@drawable/ic_twitter"
+            android:key="@string/Twitter"
+            />
+        <Preference android:title="Instagram" android:icon="@drawable/ic_instagram_sketched"
+            android:key="@string/Instagram"
+            />
+        <Preference android:title="Youtube" android:icon="@drawable/ic_youtube__1_"
+            android:key="@string/Youtube"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

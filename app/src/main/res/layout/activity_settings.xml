@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.SettingsActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:layout_collapseMode="pin"
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:background="@color/PinkColor"
+        android:elevation="8dp"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_template_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        >
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:gnt_template_type="@layout/gnt_small_template_view"
+         />
+    </androidx.cardview.widget.CardView>
+    <fragment
+        android:id="@+id/myFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.be_apps.alarmmanager.UI.SettingsActivity$SettingsFragment"
+        tools:ignore="FragmentTagUsage" />
+</LinearLayout>
+    <ImageView
+        android:id="@+id/celebrate1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_confetti"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/celebrate2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_confetti"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"
+        />
+    <ImageView
+        android:id="@+id/celebrate3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_confetti"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"
+        />
+</RelativeLayout>

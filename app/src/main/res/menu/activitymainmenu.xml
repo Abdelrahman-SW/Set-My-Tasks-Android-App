@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myapp="http://schemas.android.com/tools">
+    <item android:icon="@drawable/ic_search"
+        android:id="@+id/search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/delete"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/delete_24"
+        android:title="Delete All Tasks" />
+
+</menu>

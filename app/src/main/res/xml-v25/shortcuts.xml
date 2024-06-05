@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="Tasks"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_assignment"
+        android:shortcutShortLabel="@string/MyTasksShortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.be_apps.alarmmanager"
+            android:targetClass="com.be_apps.alarmmanager.UI.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="AddTask"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_add"
+        android:shortcutShortLabel="@string/AddTaskShortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.be_apps.alarmmanager"
+            android:targetClass="com.be_apps.alarmmanager.UI.MainActivity" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.be_apps.alarmmanager"
+            android:targetClass="com.be_apps.alarmmanager.UI.EditActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="FinishedTasks"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_done"
+        android:shortcutShortLabel="@string/FinishedTasksShortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.be_apps.alarmmanager"
+            android:targetClass="com.be_apps.alarmmanager.UI.MainActivity" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.be_apps.alarmmanager"
+            android:targetClass="com.be_apps.alarmmanager.UI.FinishedTasksActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="Settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_settings"
+        android:shortcutShortLabel="@string/SettingsShortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.be_apps.alarmmanager"
+            android:targetClass="com.be_apps.alarmmanager.UI.MainActivity" />
+        <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.be_apps.alarmmanager"
+        android:targetClass="com.be_apps.alarmmanager.UI.SettingsActivity" />
+    </shortcut>
+</shortcuts>

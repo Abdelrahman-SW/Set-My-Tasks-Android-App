@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PinkColor">#5A93D5</color>
+    <color name="clr">#fce4ec</color>
+    <color name="Ripple_select">#4D5A93D5</color>
+    <color name="StrokeGeofence">#d50000</color>
+    <color name="FillColorGeofence">#F4C3C3</color>
+</resources>

@@ -1,0 +1,52 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/PinkColor</item>
+        <item name="colorPrimaryDark">@color/PinkColor</item>
+        <item name="colorAccent">@color/PinkColor</item>
+        <item name="actionModeBackground">@color/PinkColor</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/PinkColor</item>
+        <item name="android:datePickerDialogTheme">@style/MydatePickerDialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/MytimePickerDialogTheme</item>
+    </style>
+    <style name="SplashScreen" parent="AppTheme" >
+        <item name="android:navigationBarColor">@color/PinkColor</item>
+    </style>
+    <style name="MainActivity" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="MydatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog" >
+        <item name="android:datePickerStyle">@style/datePickerStyle</item>
+        <item name="android:colorAccent">@color/PinkColor</item>
+        <item name="colorAccent">@color/PinkColor</item>
+    </style>
+    <style name="MytimePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog" >
+        <item name="android:timePickerStyle">@style/timePickerStyle</item>
+        <item name="android:colorAccent">@color/PinkColor</item>
+        <item name="colorAccent">@color/PinkColor</item>
+    </style>
+    <style name="datePickerStyle" parent= "@android:style/Widget.Material.Light.DatePicker">
+          <item name="android:headerBackground">@color/PinkColor</item>
+    </style>
+    <style name="timePickerStyle" parent= "@android:style/Widget.Material.Light.TimePicker">
+        <item name="android:headerBackground">@color/PinkColor</item>
+    </style>
+
+    <style name="bottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyle</item>
+    </style>
+
+    <style name="bottomSheetStyle">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/custom_dialog_anim</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+
+    </style>
+
+</resources>

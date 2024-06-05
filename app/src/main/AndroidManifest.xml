@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidElementNotAllowed -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.be_apps.alarmmanager">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+    <application
+        android:name="com.be_apps.alarmmanager.Systems.App"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/the_app_icon"
+        android:label="Set My Tasks"
+        android:roundIcon="@mipmap/the_app_icon_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:supportsRtl"
+        tools:targetApi="n">
+
+        <meta-data
+            android:name="com.startapp.sdk.APPLICATION_ID"
+            android:value="200636081" />
+
+                <meta-data
+                    android:name="com.google.android.gms.ads.APPLICATION_ID"
+                    android:value="ca-app-pub-3354564452098710~4092415412"/>
+
+                <meta-data android:name="applovin.sdk.key"
+                android:value="w2bp48uvr486mi-eT29qg54cdDGffPTiQzqmr1bJdKRyNflKSxPccS7ECG4V3bRJSSQiAPZOJJxTlINHQgUdOA"  />
+        <meta-data android:name="com.startapp.sdk.RETURN_ADS_ENABLED" android:value="false" />
+        <receiver
+            android:enabled="true"
+            android:exported="true"
+            android:name="com.be_apps.alarmmanager.Broadcasts.BroadCastForBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <!--For HTC devices-->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+
+
+        <activity android:name="com.be_apps.alarmmanager.UI.LocationTasksActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.be_apps.alarmmanager.UI.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName="com.be_apps.alarmmanager.UI.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.IntroActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.FinishedTasksActivity"
+            android:parentActivityName="com.be_apps.alarmmanager.UI.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.SettingsActivity"
+            android:parentActivityName="com.be_apps.alarmmanager.UI.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.splashscreen"
+            android:noHistory="true"
+            android:theme="@style/SplashScreen"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.EditActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.be_apps.alarmmanager.UI.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.be_apps.alarmmanager.UI.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+
+        <receiver android:name="com.be_apps.alarmmanager.WidgetSystem.TaskWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/task_widget_info" />
+        </receiver>
+
+        <receiver android:name="com.be_apps.alarmmanager.Broadcasts.MyBroadCast">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.be_apps.alarmmanager.Broadcasts.GeofencingBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name="com.be_apps.alarmmanager.Broadcasts.GpsBroadcast"
+            android:exported="true"
+            android:enabled="true"/>
+        <receiver android:name="com.be_apps.alarmmanager.Broadcasts.GooglePlayServicesDataClearedReceiver" >
+            <intent-filter>
+                <!-- Used to watch for Google Play Services data cleared -->
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" android:sspPrefix="com.google.android.gms"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.be_apps.alarmmanager.Systems.TTsServices" />
+        <service
+            android:name="com.be_apps.alarmmanager.WidgetSystem.TaskWidgetServices"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+
+
+</manifest>

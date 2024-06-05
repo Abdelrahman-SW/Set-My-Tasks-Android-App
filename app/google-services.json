@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "510114615738",
+    "firebase_url": "https://mysettasksapp.firebaseio.com",
+    "project_id": "mysettasksapp",
+    "storage_bucket": "mysettasksapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510114615738:android:24786658b02c7535354d83",
+        "android_client_info": {
+          "package_name": "com.be_apps.alarmmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510114615738-caugv8ctqt1067c5mv2ipsck70ngoehp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.be_apps.alarmmanager",
+            "certificate_hash": "32ff6153ed6529637783227f2f1f2aa4a4b8fe20"
+          }
+        },
+        {
+          "client_id": "510114615738-fjvdc0fm6nv8hgdcabngtdji49c68fhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvVdHKtBc9fxap_oNjhzk80rH69QJSoRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510114615738-fjvdc0fm6nv8hgdcabngtdji49c68fhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3354564452098710~4092415412"
+    }
+  ],
+  "configuration_version": "1"
+}

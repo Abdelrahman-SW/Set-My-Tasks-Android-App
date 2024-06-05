@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/Widget_toolbar"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/Ripple_select"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_tasks"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/Widget_Add_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:srcCompat="@drawable/add"
+            android:focusable="true"
+            android:contentDescription="@string/add_task" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/Widget_list_view"
+        android:background="@color/Ripple_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/Widget_No_Tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_active_tasks_img"
+            android:contentDescription="@string/no_active_tasks" />
+
+        <TextView
+            android:id="@+id/NoTaskText"
+            android:textAlignment="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="6dp"
+            android:textColor="@android:color/white"
+            android:text="@string/there_are_no_active_tasks" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="EntriesForRepeat">
+        <item>None</item>
+        <item>Once per day</item>
+        <item>Once per week</item>
+        <item>Once per month</item>
+        <item>Once per year</item>
+        <item>Other..</item>
+    </string-array>
+
+    <string-array name="Language_entries">
+        <item>English(UK)</item>
+        <item>English(US)</item>
+        <item>Arabic/العربية</item>
+        <item>Chinese</item>
+        <item>German</item>
+        <item>Italy</item>
+    </string-array>
+
+    <string-array name="Language_value">
+        <item>@string/UK</item>
+        <item>@string/US</item>
+        <item>@string/AR</item>
+        <item>@string/Ch</item>
+        <item>@string/GE</item>
+        <item>@string/IT</item>
+    </string-array>
+    
+    <string-array name="RemindMeEntries">
+        <item>1 Min</item>
+        <item>2 Min</item>
+        <item>5 Min</item>
+        <item>10 Min</item>
+    </string-array>
+
+    <string-array name="RemindMeValues">
+        <item>@string/min1</item>
+        <item>@string/min2</item>
+        <item>@string/min5</item>
+        <item>@string/min10</item>
+    </string-array>
+
+    <string-array name="OrderByEntries" >
+        <item>Default</item>
+        <item>Alphabetically</item>
+        <item>By Date\n(oldest to newest)</item>
+        <item>By Date\n(newest to oldest)</item>
+    </string-array>
+
+    <string-array name="OrderByValues">
+        <item>@string/defaultOrder</item>
+        <item>@string/AlphabeticallyOrder</item>
+        <item>@string/DateOtN</item>
+        <item>@string/DateNtO</item>
+    </string-array>
+
+</resources>

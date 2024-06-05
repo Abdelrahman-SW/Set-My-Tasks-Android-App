@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="16dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="20dp">
+    <TextView
+        android:drawablePadding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:lineSpacingExtra="8dp"
+        android:gravity="center"
+        android:text="@string/this_app_collects_location_data_to_enable_your_location_tasks_so_that_the_app_can_detect_your_current_location_and_notify_you_about_your_location_tasks_even_when_the_app_is_closed_or_not_in_use"
+        app:drawableTopCompat="@drawable/ic_user" />
+
+</LinearLayout>
